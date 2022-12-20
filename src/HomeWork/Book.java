@@ -2,23 +2,23 @@ package HomeWork;
 
 public class Book {
     private String nameBook;
-    private int age;
+    private int year;
 
 
     public Book(String nameBook, int age) {
         this.nameBook = nameBook;
-        this.age = age;
+        this.year = age;
     }
 
     public String getNameBook() {
         return this.nameBook;
     }
-    public int getAge() {
-        return this.age;
+    public int getYear() {
+        return this.year;
     }
 
-    public void setAge(int age) {
-        this.age = age;
+    public void setYear(int year) {
+        this.year = year;
     }
 }
 
