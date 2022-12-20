@@ -3,9 +3,10 @@ package HomeWork;
 public class Main {
     public static void main(String[] args) {
         Author author1 = new Author("Кэти", "Сьерра");
-        Book book1 = new Book("Java", 2012);
+        Book book1 = new Book("Java", 2012, "Кэти Сьерра");
         System.out.println("author1.firstName = " + author1.getFirstName());
         System.out.println("author1.secondName = " + author1.getSecondName());
+        System.out.println("author1.secondName = " + book1.getAuthor());
         System.out.println("book1.nameBook = " + book1.getNameBook());
         System.out.println("book1.age = " + book1.getYear());
 
@@ -14,8 +15,8 @@ public class Main {
         System.out.println("book1 = " + book1.getYear());
 
         Author author2 = new Author("Лев", "Толстой");
-        Book book2 = new Book("Война и мир", 1873);
+        Book book2 = new Book("Война и мир", 1873, "Лев Николаевич Толстой");
         System.out.println("Автор книги №2 = " + author2.getFirstName() + " " + author2.getSecondName());
-        System.out.println("Название и год книги №2 = " + book2.getNameBook() + " " + book2.getYear());
+        System.out.println("Книга №2 = " + book2.getNameBook() + " " + book2.getYear() + " " + book2.getAuthor());
     }
 }
